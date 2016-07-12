@@ -8,7 +8,7 @@
  * Controller of the phoneCatalogApp
  */
 angular.module('phoneCatalogApp')
-  .controller('PhonestCtrl', function () {
+  .controller('PhonesCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
