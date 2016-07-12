@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name phoneCatalogApp.controller:AboutCtrl
+ * @name phoneCatalogApp.controller:MainCtrl
  * @description
- * # AboutCtrl
+ * # MainCtrl
  * Controller of the phoneCatalogApp
  */
 angular.module('phoneCatalogApp')
-  .controller('AboutCtrl', function () {
+  .controller('HomepageCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
