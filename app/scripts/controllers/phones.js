@@ -15,3 +15,11 @@ angular.module('phoneCatalogApp')
       'Karma'
     ];
   });
+
+// angular.module('PhoneList',[])
+// .controller('PhoneCtrl',['$scope', '$http', function($scope, $http)
+// {
+//   $http.get('json/json/phones.json').succes(function(data){
+//     $scope.guitarVariable=data;
+//   });
+// }]);
