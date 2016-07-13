@@ -1,1 +1,33 @@
-<p>This is the about view.</p>
+<div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+      <div class="panel panel-default filter">
+        <form>
+          <input type="text" class="form-control" ng-model="firstname" placeholder="Search">
+          <select class="form-control">
+            <option ng-repeat="x in filterType">{{x}}</option>
+          </select>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" ng-repeat="x in names">
+    <div class="row">
+      <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+        <img ng-src= "../json/{{x.imageUrl}}" class="img-responsive phones">
+      </div>
+      <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 details">
+        <div class="panel-body">
+          <h3>{{ x.name }}</h3>
+          <p>{{x.snippet}}</p>
+          <p> Price: {{x.price }}</p>
+          <button type="button" class="btn btn-primary" ng-model="singleModel" uib-btn-checkbox btn-checkbox-true="1" btn-checkbox-false="0">
+            Details
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
