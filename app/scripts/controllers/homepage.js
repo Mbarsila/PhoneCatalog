@@ -13,5 +13,6 @@ angular.module('phoneCatalogApp')
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
+
     ];
   });
