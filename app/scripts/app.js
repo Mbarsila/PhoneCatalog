@@ -15,20 +15,22 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'Homepage',
+    'PhoneList',
+    'phoneDetail'
   ])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/homepage.html',
-        controller: 'HomepageCtrl',
+        controller: 'CarouselCtrl'
 
       })
       .when('/about', {
         templateUrl: 'views/phones.html',
-        controller: 'PhonestCtrl',
-
-      })
+        controller: 'phoneDetails'
+})
       .otherwise({
         redirectTo: '/'
       });
