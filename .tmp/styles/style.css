@@ -13,50 +13,62 @@ img{
   margin-left:-200px;
 }
 
-/*sidebar style*/
-div.container.menuPosition{
-  margin-left: 0;
+/*tabs*/
+
+/*phonedetails*/
+body.ng-scope{
+  background-color: black;
 }
+
 .container {
-  width: 100%;}
+  width: 100%;
+}
 
-  body{
-    background-color: black;
-  }
+div.ng-isolate-scope{
+  margin-left: 25px;
+  margin-right: 45px;
+}
+div.col-lg-12.ng-binding{
+  color: #fff;
+}
+div.tab-content{
+  color: #fff;
+}
+p.rate{
+  color: #fff;
+}
+div.list.ng-scope{
+  border-color: red;
 
-  /*phone list style*/
-  .panel-default {
-    border-color:#e20404;
-  }
-  .panel {
-    margin-bottom: 20px;
-    background-color: #fcf8e3;
-    border: 3px solid red ;
-    border-radius: 4px;
-  }
+}
 
-  div.panel.panel-default.ng-scope{
-    margin-left: 7%;
-    margin-right: 7%;
-    border-radius: 25px;
-    margin-top: 30px;
-  }
-  h3.ng-binding{
-    margin-top: 0;
-  }
-
- img.phones{
-   width: 150px;
- }
- img.img-responsive.phones{
-   margin-left: 10px;
-   margin-top: 10px;
-   margin-bottom: 10px;
-   margin-right: 0px;
-
-
- }
- div.col-xs-12.col-sm-10.col-md-10.col-lg-10.details{
-   padding-left: 10px;
-   margin-bottom: 100px;
- }
+.panel{
+  border: 4px solid transparent;
+  border-radius: 30px;
+  margin-bottom: 5px;
+}
+.phones{
+  padding-top: 15px;
+  padding-left: 10px;
+}
+div.panel-body{
+  padding-bottom: 100px;
+}
+div.col-xs-12.col-sm-12.col-md-2.col-lg-2{
+  padding-right: 0px;
+  padding-left: 0px;
+}
+div.panel.panel-default.filter{
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+input.form-control.ng-pristine {
+  margin-bottom: 5px;
+}
+form.ng-pristine.ng-valid{
+  font-weight: bold;
+}
