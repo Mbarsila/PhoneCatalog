@@ -10,5 +10,65 @@ img{
   width: 400px;
   left:50%;
   top:20px;
- margin-left:-200px;
+  margin-left:-200px;
+}
+
+/*tabs*/
+
+/*phonedetails*/
+body.ng-scope{
+  background-color: black;
+}
+
+.container {
+  width: 100%;
+}
+
+div.ng-isolate-scope{
+  margin-left: 25px;
+  margin-right: 45px;
+}
+div.col-lg-12.ng-binding{
+  color: #fff;
+}
+div.tab-content{
+  color: #fff;
+}
+p.rate{
+  color: #fff;
+}
+div.list.ng-scope{
+  border-color: red;
+
+}
+
+.panel{
+  border: 4px solid transparent;
+  border-radius: 30px;
+  margin-bottom: 5px;
+}
+.phones{
+  padding-top: 15px;
+  padding-left: 10px;
+}
+div.panel-body{
+  padding-bottom: 100px;
+}
+div.col-xs-12.col-sm-12.col-md-2.col-lg-2{
+  padding-right: 0px;
+  padding-left: 0px;
+}
+div.panel.panel-default.filter{
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+input.form-control.ng-pristine {
+  margin-bottom: 5px;
+}
+form.ng-pristine.ng-valid{
+  font-weight: bold;
 }
