@@ -1,0 +1,25 @@
+<div class="modal-header">
+  <h3 class="modal-title">Fill the form to make an order</h3>
+</div>
+<div class="modal-body">
+  <input  class="form-control" type="text" ng-model="firstname" placeholder="Name Surname">
+  <input  class="form-control" type="text" ng-model="country" placeholder="Country">
+  <input  class="form-control" type="text" ng-model="city" placeholder="City">
+  <input  class="form-control" type="text" ng-model="address" placeholder="Shipping address">
+  <input  class="form-control" type="email" ng-model="email" placeholder="Email:example@domain.something">
+  <form>
+    Select  payment method:<br>
+    <input type="radio" ng-model="myVar" value="WesternUnion">Western Union <br>
+    <input type="radio" ng-model="myVar" value="PayPal">Pay Pal <br>
+    <input type="radio" ng-model="myVar" value="CreditCard">Credit Card <br>
+    <input type="radio" ng-model="myVar" value="Cash">Cash <br>
+  </form>
+  <form>
+    <input type="checkbox" ng-model="myVar">
+    I accept the terms of shipping. <a href="#">Click here to read it.</a>
+</form>
+</div>
+<div class="modal-footer">
+  <button class="btn btn-primary " type="button" ng-click="ok()">Order Now</button>
+  <button class="btn btn-primary" type="button" ng-click="cancel()"><span class="glyphicon glyphicon-remove"></span></button>
+</div>
