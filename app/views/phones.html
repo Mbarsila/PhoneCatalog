@@ -1,33 +1,44 @@
 <div>
   <div class="row">
-    <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+    <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
     </div>
     <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
       <div class="panel panel-default filter">
-        <form>
-          <input type="text" class="form-control" ng-model="firstname" placeholder="Search">
-          <select class="form-control">
-            <option ng-repeat="x in filterType">{{x}}</option>
-          </select>
-        </form>
-      </div>
-    </div>
+            <input class="form-control" type="text" placeholder="Search" ng-model="searchText.name">
+            <select ng-model="sortColumn" class="form-control">
+              <option value="age">Newest</option>
+              <option value="name">Alphabetical</option>
+              <option value="price">Price</option>
+            </select>
+          </div>
+     </div>
+     <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+     </div>
   </div>
-  <div class="panel panel-default" ng-repeat="x in names">
-    <div class="row">
-      <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-        <img ng-src= "../json/{{x.imageUrl}}" class="img-responsive phones">
-      </div>
-      <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 details">
-        <div class="panel-body">
-          <h3>{{ x.name }}</h3>
-          <p>{{x.snippet}}</p>
-          <p> Price: {{x.price }}</p>
-          <a class="btn btn-primary" ng-href="#/phoneDetails">
-            Details
-          </a>
+  <div class="row">
+    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+    </div>
+    <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+      <div class="panel panel-default list" ng-repeat="x in names | filter:searchText| orderBy:sortColumn">
+        <div class="row">
+          <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+            <img ng-src= "../json/{{x.imageUrl}}" class="img-responsive phones">
+          </div>
+          <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 details">
+            <div class="panel-body">
+              <h3>{{ x.name }}</h3>
+              <p>{{x.snippet}}</p>
+              <p> Price: {{x.price }}</p>
+              <a class="btn btn-primary" ng-click="x.id" href="#/phoneDetails/{{x.id}}">
+                Details
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+    </div>
   </div>
+
 </div>
