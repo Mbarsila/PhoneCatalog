@@ -16,9 +16,12 @@ angular
   'ngRoute',
   'ngSanitize',
   'ngTouch',
+  'ui.bootstrap',
   'Homepage',
   'PhoneList',
-  'phoneDetail'
+  'phoneDetail',
+  'tabs',
+  'modals'
 ])
 .config(function ($routeProvider) {
   $routeProvider
@@ -30,9 +33,9 @@ angular
     templateUrl: 'views/phones.html',
     controller: 'phoneDetails'
   })
-  .when('/phoneDetails', {
+  .when('/phoneDetails/:id', {
     templateUrl: 'views/phoneDetail.html',
-    // controller: 'phoneDetails'
+    controller: 'tabsctrl'
   })
   .otherwise({
     redirectTo: '/'
